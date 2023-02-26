@@ -12,21 +12,23 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import {MatSelectModule} from '@angular/material/select'; 
+import {MatSelectModule} from '@angular/material/select';
+import { WeatherReportComponent } from './weather-report/weather-report.component'; 
 
-// const routes: Routes = [
-//   {
-//     path: "",
-//     component: WeatherReportComponent
-//   },
-//   {
-//     path: ":locationName",
-//     component: WeatherReportComponent
-//   }
-// ];
+const routes: Routes = [
+  {
+    path: "",
+    component: WeatherReportComponent
+  },
+  {
+    path: ":locationName",
+    component: WeatherReportComponent
+  }
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WeatherReportComponent
   ],
   imports: [
     BrowserModule,
